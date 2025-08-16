@@ -19,7 +19,24 @@ The competition is evaluated using the **Mean F1-Score**, balancing **precision*
 ## Project Structure
 - `notebooks/`: step-by-step EDA, feature engineering, and modeling.  
 - `src/`: modular Python code for preprocessing, training, and evaluation.  
-- `results/`: final metrics and plots.  
+- `results/`: final metrics and plots.
+
+````
+Kaggle_Network_Anomaly_Detection/
+├── data/                   
+├── notebooks/               
+│   ├── 01_EDA.ipynb
+│   ├── 02_Feature_Engineering.ipynb
+│   └── 03_Modeling.ipynb
+├── src/                     
+│   ├── __init__.py
+│   ├── preprocessing.py      
+│   ├── training.py           
+│   └── utils.py
+├── results/                 
+├── requirements.txt          
+└── README.md                 
+````
 
 ## Tech Stack
 - Python 3.10  

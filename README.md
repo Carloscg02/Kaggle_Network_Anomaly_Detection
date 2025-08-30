@@ -18,36 +18,30 @@ The competition is evaluated using the **Mean F1-Score**, balancing **precision*
 
 ## Project Structure
 - `notebooks/`: step-by-step EDA, feature engineering, and modeling.  
-- `src/`: modular Python code for preprocessing, training, and evaluation.  
-- `results/`: final metrics and plots.
+- `src/`: modular Python code for configuration, training and evaluation.
 
 ````
 Kaggle_Network_Anomaly_Detection/
 ├── data/                   
 ├── notebooks/               
-│   ├── 01_EDA.ipynb
-│   ├── 02_Feature_Engineering.ipynb
-│   └── 03_Modeling.ipynb
+│   ├── notebooks.ipynb #EDA, feature engineering and training trials
+│   
 ├── src/                     
 │   ├── __init__.py
-│   ├── preprocessing.py      
-│   ├── training.py           
-│   └── utils.py
-├── results/                 
+│   ├── config.py      
+│   ├── dataset.py
+│   ├── model.py            
+│   └── predict.py
+│              
 ├── requirements.txt          
 └── README.md                 
 ````
 
-## Tech Stack
+## Dependencies
 - Python 3.10  
 - scikit-learn  
 - pandas, numpy  
 - matplotlib, seaborn  
-- Jupyter  
-
-## Next Steps
-- Try different classifiers: Logistic Regression, Random Forests, XGBoost.  
-- Tune hyperparameters with cross-validation.  
-- Compare centralized and feature-engineered approaches.  
+- Jupyter 
 
  
